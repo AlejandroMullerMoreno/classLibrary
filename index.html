@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <dialog id="dialog">
+        <form method="dialog">
+          <p>
+            <label>
+              Name of new book:
+              <input type="text" required name="name_book" />
+            </label>
+          </p>
+          <div>
+            <input type="submit" id="normal-close" value="Normal close" />
+            <input
+              type="submit"
+              id="novalidate-close"
+              value="Novalidate close"
+              formnovalidate />
+            <input type="submit" id="js-close" value="JS close" />
+          </div>
+        </form>
+      </dialog>
+      <p>
+        <button id="show-dialog">Add New Book</button>
+      </p>
+      <output></output>
+    
+</body>
+</html>
